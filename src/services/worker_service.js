@@ -10,7 +10,7 @@ export default {
     async getWorkerMatches(workerId) {
         return await axios.get(URL + PATH + "/" + workerId + "/matches");
     },
-    async rejectjob(workerId,jobId) {
+    async rejectJob(workerId,jobId) {
         return await axios.post(URL + PATH + "/" + workerId + "/job/" +jobId+"/reject");
     },
     async acceptJob(workerId,jobId) {

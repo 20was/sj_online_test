@@ -33,7 +33,13 @@ import worker_service from "@/services/worker_service";
 
 export default {
   name: 'JobsCard',
-  props: ['match', 'workerId'],
+  props: {
+    match: Object,
+    workerId: {
+      type: String,
+      required: true
+    },
+  },
   components: {RateContainer, TitleContainer, HeroContainer, DetailsBox},
   data() {
     return {}
@@ -51,7 +57,7 @@ export default {
   },
   methods: {
     rejectJob(jobId) {
-      worker_service.rejectjob(this.workerId, jobId)
+      worker_service.rejectJob(this.workerId, jobId)
           .then(body => {
             console.log(body)
           })
