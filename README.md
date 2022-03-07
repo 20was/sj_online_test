@@ -7,9 +7,9 @@ This app displays the jobs list according to the user's match. Each job has two 
 ## How to Setup
 Follow the following steps of commands to setup and run the application
 
-- `git clone git@github.com:geshan/subordinater.git`
-- `cd subordinater`
-- `npm install ( you can also use yarn if you wish)`
+- clone the code
+- `cd` into directory
+- `npm install (yarn if you wish)`
 - `npm start`
 
 ## Libraries / Tools used
