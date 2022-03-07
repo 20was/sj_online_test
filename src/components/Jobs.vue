@@ -30,7 +30,6 @@ import HeroContainer from "@/components/HeroContainer";
 import TitleContainer from "@/components/TitleContainer";
 import RateContainer from "@/components/RateContainer";
 import worker_service from "@/services/worker_service";
-
 export default {
   name: 'JobsCard',
   props: {
@@ -59,16 +58,31 @@ export default {
     rejectJob(jobId) {
       worker_service.rejectJob(this.workerId, jobId)
           .then(body => {
+            this.displayAlert('success','Success !!','Job Rejected')
             console.log(body)
           })
-          .catch((error) => console.log(error));
+          .catch((error) => {
+            console.log(error)
+            this.displayAlert('error','OOPS !!', error)
+          });
     },
     acceptJob(jobId) {
       worker_service.acceptJob(this.workerId, jobId)
           .then(body => {
+            this.displayAlert('success','Success !!','Job Accepted')
             console.log(body)
           })
-          .catch((error) => console.log(error));
+          .catch((error) => {
+            console.log(error)
+            this.displayAlert('error','OOPS !!', error)
+          });
+    },
+    displayAlert(icon,title,text){
+      this.$swal.fire({
+        icon: icon,
+        title:title,
+        text: text,
+      })
     }
   }
 }
