@@ -25,7 +25,7 @@
         </ul>
       </div>
       <div v-if="report">
-        <span>{{ report.name }}</span>
+        <span>{{ report.name }} {{report.phone}}</span>
       </div>
     </div>
   </div>

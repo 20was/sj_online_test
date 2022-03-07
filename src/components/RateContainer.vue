@@ -29,7 +29,8 @@ export default {
 
 .rate h2 {
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .rate span {
@@ -40,5 +41,8 @@ export default {
 h2, h4 {
   font-weight: bold;
   margin: 0;
+}
+.rate div:last-child{
+  text-align: end;
 }
 </style>
