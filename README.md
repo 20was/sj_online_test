@@ -1,24 +1,22 @@
-# swipejobs
+# SwipeJobs
+Swipejob!
 
-## Project setup
-```
-npm install
-```
+## Description
+This app displays the jobs list according to the user's match. Each job has two actions, `I Like It` button to apply for the job or  `No Thanks` button to reject.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## How to Setup
+Follow the following steps of commands to setup and run the application
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- `git clone git@github.com:geshan/subordinater.git`
+- `cd subordinater`
+- `npm install ( you can also use yarn if you wish)`
+- `npm start`
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Libraries / Tools used
+- Font-awesome library for the icons
+- Axios to fetch the API data
+- MomentJs to format the date based on our requirement
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Deployed on Netlify
+
