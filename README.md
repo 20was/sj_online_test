@@ -1,16 +1,16 @@
-# SwipeJobs
-Swipejob!
+# Project
+Swipejobs
 
 ## Description
 This app displays the jobs list according to the user's match. Each job has two actions, `I Like It` button to apply for the job or  `No Thanks` button to reject.
 
-## How to Setup
+## Setup
 Follow the following steps of commands to setup and run the application
 
 - clone the code
 - `cd` into directory
-- `npm install (yarn if you wish)`
-- `npm start`
+- `npm install` to install all dependencies
+- `npm start` to run
 
 ## Libraries / Tools used
 - Font-awesome library for the icons
