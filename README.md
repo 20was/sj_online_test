@@ -16,6 +16,7 @@ Follow the following steps of commands to setup and run the application
 - Font-awesome library for the icons
 - Axios to fetch the API data
 - MomentJs to format the date based on our requirement
+- Sweet Alert for alert messages
 
 
 ## Deployed on Netlify
