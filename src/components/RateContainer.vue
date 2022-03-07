@@ -2,7 +2,7 @@
   <div class="rate">
     <div>
       <h4>Distance</h4>
-      <h2>{{ distance }} miles</h2>
+      <h2>{{distance }} miles</h2>
     </div>
     <div>
       <h4>Hourly Rate</h4>
@@ -14,7 +14,16 @@
 <script>
 export default {
   name: "RateContainer",
-  props:['distance','rate']
+  props: {
+    distance: {
+      type: [String, Number],
+      required: true
+    },
+    rate: {
+      type: [String, Number],
+      required: true
+    },
+  },
 }
 </script>
 

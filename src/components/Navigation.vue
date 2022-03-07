@@ -11,7 +11,16 @@
 <script>
 export default {
   name: "NavigationBar",
-  props:['profile'],
+  props: {
+    profile: {
+      type: Object,
+      required: true,
+      default: () => ({
+        firstName:'Hey',
+        lastName:'Stranger'
+      })
+    }
+  },
   computed:{
     fullName(){
       return this.profile.firstName +" "+ this.profile.lastName

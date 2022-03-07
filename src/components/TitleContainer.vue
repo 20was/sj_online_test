@@ -8,7 +8,10 @@
 <script>
 export default {
   name: "TitleContainer",
-  props:['title','subTitle']
+  props: {
+    title: String,
+    subTitle: String,
+  },
 }
 </script>
 

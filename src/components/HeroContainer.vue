@@ -6,7 +6,13 @@
 <script>
 export default {
   name: "HeroContainer",
-  props:['imgUrl']
+  props: {
+    imgUrl: {
+      type: String,
+      required: true,
+      default:'https://via.placeholder.com/900x300'
+    }
+  },
 }
 </script>
 

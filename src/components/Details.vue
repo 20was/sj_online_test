@@ -36,7 +36,23 @@ import 'moment-timezone';
 export default {
   name: "DetailsBox",
   components: {},
-  props: ['icon', 'heading', 'shift', 'address', 'requirements', 'report', 'distance', 'rightArrow','zone'],
+  props: {
+    icon: {
+      type: String,
+      required:true,
+      default:'fa-solid fa-circle-dot'
+    },
+    heading:String,
+    shift: Array,
+    address: Object,
+    requirements: Array,
+    report: Object,
+    distance: {
+      type: [String,Number],
+    },
+    rightArrow: Boolean,
+    zone:  String,
+  },
   data() {
     return {
       timeFormat: {
