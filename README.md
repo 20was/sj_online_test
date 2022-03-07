@@ -19,4 +19,4 @@ Follow the following steps of commands to setup and run the application
 
 
 ## Deployed on Netlify
-
+[https://swipej.netlify.app/](https://swipej.netlify.app)
